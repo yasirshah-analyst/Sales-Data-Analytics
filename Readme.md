@@ -2,7 +2,6 @@
 
 
 ## Project Overview 
-
 This project showcases end-to-end Excel data analytics by taking raw sales data and turning it into actionable insights. It covers the full workflow: bringing data in, cleaning it, analyzing it, passing it to a visualization tool, visualizing trends, and presenting findings. The final interactive dashboard highlights sales performance, key metrics, and business insights, demonstrating practical skills in data cleaning, analysis, and visualization.
 
 ---
@@ -34,7 +33,7 @@ This project showcases end-to-end Excel data analytics by taking raw sales data 
 ---
 
 ## Full Data Analytics Pipeline
-
+---
 ### Step 1: Bringing Data
 Imported raw dataset (comma-separated in a single column) into Excel for processing
 The raw dataset contained several inconsistencies including:
@@ -68,7 +67,6 @@ Screenshot:
 ---
 
 #### Adjusting Column Width for Better Readability
-
 Adjusted column widths to ensure all data is clearly visible and properly aligned for improved readability.
 
 Screenshot:
@@ -96,7 +94,6 @@ Screenshot:
 ---
 
 #### Email Column Cleaning and Standardization
-
 ##### Handling Domain Errors
 Cleaned the email column by correcting domain formatting issues using IF()
 
@@ -106,7 +103,6 @@ Screenshot:
 ---
 
 ##### Special Character Cleanup & Case Standardization
-
 Cleaned special character issues and standardized lowercase formatting in the email column using LOWER() + SUBSTITUTE() to ensure consistency.
 
 Screenshot:
@@ -121,7 +117,6 @@ Screenshot:
 ---
 
 ##### null Value Handling
-
 Replaced null values with “No Email Provided” using IF()
 
 Screenshot:
@@ -130,7 +125,6 @@ Screenshot:
 ---
 
 #### Duplicate Removal
-
 Removed a single duplicate row using Excel’s “Remove Duplicates” feature from the ribbon to ensure unique records in the dataset.
 
 Screenshot:
@@ -144,12 +138,9 @@ Screenshot:
 
 ---
 
-## Analysis 
-
+## Step 3. Preparing Data For Analysis
 ---
-
 ### Dataset Enhancement by adding Month-Year and Month-Start Columns
-
 Enhanced the dataset by creating two additional columns: Month_Year and Month_Start to support time-based analysis and improve trend tracking.
 
 **Month_Year_Column**
@@ -162,10 +153,8 @@ Screenshot:
 
 ---
 
-### Pivot Table Analysis
-
+### Step 4: Bringing data into a visualization tool
 ---
-
 #### Revenue by Category
 Created a pivot table to summarize total revenue by product category, highlighting top-performing categories.
 
@@ -176,43 +165,8 @@ Built a pivot table to track revenue trends over time, helping identify patterns
 
 ---
 
-Analysis Screenshot:
-![Analysis](Analysis/screenshot/pivot.png)
-
+### Step 5: Visualizing Data by Pivot Charts
 ---
-
-### Insights Generated
-- **1. High Revenue Concentration Risk**
-The Electronics category dominates nearly half of the total revenue, creating a heavy reliance on a single product line or service. This means any market shift affecting that specific category will impact the entire business's financial health.
-
-- **2. Post-Peak Retention Collapse**
-Revenue peaks in Month 2 but then drops steadily over the next four months. This means the business can attract customers at first, but struggles to keep them coming back regularly.
-
----
-
-## 📊 Dashboard Creation: An excel dashboard was created to summarize insights visually.
-
-The dashboard includes:
-- KPIs
-- Pivot Charts
-- Slicers
-
----
-
-### Key Performance Indicators (KPIs) 
-
-#### Dynamic KPI – Total Revenue
-
-A dynamic Total Revenue KPI was created using Excel’s GETPIVOTDATA function, allowing the value to update automatically based on Pivot Table filters and slicers.
-
-This ensures that whenever the user interacts with the dashboard (e.g., selects a category or month), the KPI reflects the exact filtered revenue in real-time—making the dashboard fully interactive and insight-driven.
-
----
-
-### Pivot Charts
-
----
-
 #### Revenue by Category
 Created from pivot table to summarize total revenue by product category, highlighting top-performing categories.
 
@@ -220,6 +174,34 @@ Created from pivot table to summarize total revenue by product category, highlig
 
 #### Monthly Revenue Trends
 Built from pivot table to track revenue trends over time, helping identify patterns and seasonal variations.
+
+---
+
+Analysis Screenshot:
+![Analysis](Analysis/screenshot/pivot.png)
+
+---
+
+#### Insights Generated
+- **1. High Revenue Concentration Risk**
+The Electronics category dominates nearly half of the total revenue, creating a heavy reliance on a single product line or service. This means any market shift affecting that specific category will impact the entire business's financial health.
+- **2. Post-Peak Retention Collapse**
+Revenue peaks in Month 2 but then drops steadily over the next four months. This means the business can attract customers at first, but struggles to keep them coming back regularly.
+
+---
+
+## Step 6: Dashboard Creation
+An excel dashboard was created to summarize insights visually. The dashboard includes:
+- KPIs
+- Pivot Charts
+- Slicers
+
+---
+
+### Key Performance Indicators (KPIs) 
+---
+#### Dynamic KPI – Total Revenue
+A dynamic Total Revenue KPI was created using Excel’s GETPIVOTDATA function, allowing the value to update automatically based on Pivot Table filters and slicers. This ensures that whenever the user interacts with the dashboard (e.g., selects a category or month), the KPI reflects the exact filtered revenue in real-time—making the dashboard fully interactive and insight-driven.
 
 ---
 
