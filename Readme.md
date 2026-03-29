@@ -60,10 +60,10 @@ The following cleaning steps are performed to clean the above raw data set to en
 Split data into columns using delimiter comma and the data type of Sales_Date converted to MDY format by TEXT TO COLUMNS
 
 Screenshot:
-![Text to Columns](Cleaning\screenshots\text_to_Column.png)
+![Text to Columns](Cleaning/screenshots/text_to_Column.png)
 
 Screenshot:
-![Organized_Raw_Data](Cleaning\screenshots\organized_raw_data.png)
+![Organized_Raw_Data](Cleaning/screenshots/organized_raw_data.png)
 
 ---
 
@@ -72,7 +72,7 @@ Screenshot:
 Adjusted column widths to ensure all data is clearly visible and properly aligned for improved readability.
 
 Screenshot:
-![Columns_width](Cleaning\screenshots\Column_widthh_issue.png)
+![Columns_width](Cleaning/screenshots/Column_widthh_issue.png)
 
 ---
 
@@ -80,10 +80,10 @@ Screenshot:
 Standardized date format by correcting wrong format DMY of some dates as the Sales_Date Column was already Converted to MDY format by TEXT TO COLUMNS
 
 Screenshot:
-![Date_Cleaning_1](Cleaning\screenshots\invalid_Date_1.png)
+![Date_Cleaning_1](Cleaning/screenshots/invalid_Date_1.png)
 
 Screenshot:
-![Date_Cleaning_2](Cleaning\screenshots\invalid_date_2.png)
+![Date_Cleaning_2](Cleaning/screenshots/invalid_date_2.png)
 
 ---
 
@@ -91,7 +91,7 @@ Screenshot:
 Fixed casing in Product_Category Column using PROPER()
 
 Screenshot:
-![Fixed_Casing](Cleaning\screenshots\proper.png)
+![Fixed_Casing](Cleaning/screenshots/proper.png)
 
 ---
 
@@ -101,7 +101,7 @@ Screenshot:
 Cleaned the email column by correcting domain formatting issues using IF()
 
 Screenshot:
-![Handling_Domain_Errors](Cleaning\screenshots\missing.com.png)
+![Handling_Domain_Errors](Cleaning/screenshots/missing.com.png)
 
 ---
 
@@ -110,13 +110,13 @@ Screenshot:
 Cleaned special character issues and standardized lowercase formatting in the email column using LOWER() + SUBSTITUTE() to ensure consistency.
 
 Screenshot:
-![Handling_special_character_and_Case](Cleaning\screenshots\Lower+Substitute.png)
+![Handling_special_character_and_Case](Cleaning/screenshots/Lower+Substitute.png)
 
 ##### Removing Extra Spaces  
 The Email column contained extra leading space in an email which is cleared using TRIM()
 
 Screenshot:
-![Removing-Extra-Spaces ](Cleaning\screenshots\trim.png)
+![Removing-Extra-Spaces ](Cleaning/screenshots/trim.png)
 
 ---
 
@@ -125,7 +125,7 @@ Screenshot:
 Replaced null values with “No Email Provided” using IF()
 
 Screenshot:
-![Replacing_null](Cleaning\screenshots\null_email.png)
+![Replacing_null](Cleaning/screenshots/null_email.png)
 
 ---
 
@@ -134,13 +134,13 @@ Screenshot:
 Removed a single duplicate row using Excel’s “Remove Duplicates” feature from the ribbon to ensure unique records in the dataset.
 
 Screenshot:
-![Duplicate_Removal](Cleaning\screenshots\duplicate.png)
+![Duplicate_Removal](Cleaning/screenshots/duplicate.png)
 
 ---
 
 **Clean Data from row 1 to 25**
 Screenshot:
-![clean_1_25](Data\Clean\screenshot\final_clean.png)
+![clean_1_25](Data/Clean/screenshot/final_clean.png)
 
 ---
 
@@ -154,11 +154,11 @@ Enhanced the dataset by creating two additional columns: Month_Year and Month_St
 
 **Month_Year_Column**
 Screenshot:
-![Month_year](Analysis\screenshot\additional_column_1.png)
+![Month_year](Analysis/screenshot/additional_column_1.png)
 
 **Month_Start_Column**
 Screenshot:
-![Month_Start](Analysis\screenshot\additional_col_2.png)
+![Month_Start](Analysis/screenshot/additional_col_2.png)
 
 ---
 
@@ -177,7 +177,7 @@ Built a pivot table to track revenue trends over time, helping identify patterns
 ---
 
 Analysis Screenshot:
-![Analysis](Analysis\screenshot\pivot.png)
+![Analysis](Analysis/screenshot/pivot.png)
 
 ---
 
@@ -234,7 +234,7 @@ Slicers are interactive filters that allow you to quickly filter by categories l
 ---
 
 Dashboard Screenshot:
-![Dashboard](Dashboard\screenshot\dashboard.png)
+![Dashboard](Dashboard/screenshot/dashboard.png)
 
 ---
 
