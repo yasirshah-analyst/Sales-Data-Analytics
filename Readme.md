@@ -24,8 +24,7 @@ This project showcases end-to-end Excel data analytics by taking raw sales data 
 
 ## Dataset Information
 - **Source:** The data set used in this project was generated using AI for portfolio purpose. All data is synthetic and does not represent real individuals. The raw data set has 95 rows including header row and duplicates row.
-
-- Type: Excel Data Analytics / Dashboard Project 
+- **Type:** Excel Data Analytics / Dashboard Project 
 
 ---
 
@@ -62,6 +61,7 @@ Split data into columns using delimiter comma and the data type of Sales_Date co
 Screenshot:
 ![Text to Columns](Cleaning/screenshots/text_to_Column.png)
 
+**Organized Raw Data**
 Screenshot:
 ![Organized_Raw_Data](Cleaning/screenshots/organized_raw_data.png)
 
@@ -182,10 +182,10 @@ Analysis Screenshot:
 ---
 
 ### Insights Generated
-- 1. High Revenue Concentration Risk
+- **1. High Revenue Concentration Risk**
 The Electronics category dominates nearly half of the total revenue, creating a heavy reliance on a single product line or service. This means any market shift affecting that specific category will impact the entire business's financial health.
 
-- 2. Post-Peak Retention Collapse
+- **2. Post-Peak Retention Collapse**
 Revenue peaks in Month 2 but then drops steadily over the next four months. This means the business can attract customers at first, but struggles to keep them coming back regularly.
 
 ---
