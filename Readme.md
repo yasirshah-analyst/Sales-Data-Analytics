@@ -2,7 +2,9 @@
 
 
 ## Project Overview 
+
 This project showcases end-to-end Excel data analytics by taking raw sales data and turning it into actionable insights. It covers the full workflow: bringing data in, cleaning it, analyzing it, passing it to a visualization tool, visualizing trends, and presenting findings. The final interactive dashboard highlights sales performance, key metrics, and business insights, demonstrating practical skills in data cleaning, analysis, and visualization.
+
 ---
 
 ## Project Objectives
@@ -47,7 +49,7 @@ The raw dataset contained several inconsistencies including:
 
 **Raw Data from row 1 to 25**
 Screenshot:
-![1_to_25_Raw](Data\Raw\screenshot\messy_raw_data.png)
+![1_to_25_Raw](Data/Raw/screenshot/messy_raw_data.png)
 
 ---
 
