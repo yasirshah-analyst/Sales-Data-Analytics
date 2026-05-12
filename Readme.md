@@ -63,6 +63,10 @@ HR Data Cleaning & Analytics Project/
 └── README.md
 
 END ─────────────────────────────────────────────
+```
+
+---
+
 
 ## Dataset Information
 - **Source:** The data set used in this project was generated using AI for portfolio purpose. All data is synthetic and does not represent real individuals. The raw data set has 95 rows including header row and duplicates row.
