@@ -151,7 +151,7 @@ Cleaned the email column by correcting domain formatting issues
 
 **Formula:**
 ```excel
-= PROPER(B2)
+= IF(OR(C2="",C2="NULL",ISBLANK(C2)),C2,IF(RIGHT(C2,4)=".com",C2,C2&".com"))
 ```
 
 Screenshot:
