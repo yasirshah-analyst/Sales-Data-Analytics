@@ -21,6 +21,49 @@ This project showcases end-to-end Excel data analytics by taking raw sales data 
 
 ---
 
+START ─────────────────────────────────────────────
+
+HR Data Cleaning & Analytics Project/
+│
+├── Raw/
+│   └── screenshot/
+│       └── messy_raw_data.png
+│
+├── Data/
+│
+├── Clean/
+│   └── screenshot/
+│       └── final_clean.png
+│
+├── Cleaning/
+│   └── screenshots/
+│       ├── Column_widthh_issue.png
+│       ├── Lower+Substitute.png
+│       ├── duplicate.png
+│       ├── invalid_Date_1.png
+│       ├── invalid_date_2.png
+│       ├── missing.com.png
+│       ├── null_email.png
+│       ├── organized_raw_data.png
+│       ├── proper.png
+│       ├── text_to_Column.png
+│       └── trim.png
+│
+├── Analysis/
+│   └── screenshot/
+│       ├── Untitled.png
+│       ├── additional_col_2.png
+│       ├── additional_column_1.png
+│       └── pivot.png
+│
+├── Dashboard/
+│   └── screenshot/
+│       └── dashboard.png
+│
+└── README.md
+
+END ─────────────────────────────────────────────
+
 ## Dataset Information
 - **Source:** The data set used in this project was generated using AI for portfolio purpose. All data is synthetic and does not represent real individuals. The raw data set has 95 rows including header row and duplicates row.
 - **Type:** Excel Data Analytics / Dashboard Project 
