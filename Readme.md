@@ -133,7 +133,12 @@ Screenshot:
 ---
 
 #### Fixing Casing Issue in Product_Category
-Fixed casing in Product_Category Column using PROPER()
+Fixed casing in Product_Category Column using 
+
+**Formula:**
+```excel
+=TEXTJOIN(": ",TRUE,XLOOKUP("ORD-1232",data1!A2:A501,data1!E2:E501),XLOOKUP("ORD-1232",data1!A2:A501,data1!G2:G501))
+```
 
 Screenshot:
 ![Fixed_Casing](Cleaning/screenshots/proper.png)
