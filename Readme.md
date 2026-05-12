@@ -137,7 +137,7 @@ Fixed casing in Product_Category Column using
 
 **Formula:**
 ```excel
-=TEXTJOIN(": ",TRUE,XLOOKUP("ORD-1232",data1!A2:A501,data1!E2:E501),XLOOKUP("ORD-1232",data1!A2:A501,data1!G2:G501))
+= PROPER(B2)
 ```
 
 Screenshot:
@@ -147,7 +147,12 @@ Screenshot:
 
 #### Email Column Cleaning and Standardization
 ##### Handling Domain Errors
-Cleaned the email column by correcting domain formatting issues using IF()
+Cleaned the email column by correcting domain formatting issues 
+
+**Formula:**
+```excel
+= PROPER(B2)
+```
 
 Screenshot:
 ![Handling_Domain_Errors](Cleaning/screenshots/missing.com.png)
