@@ -162,6 +162,11 @@ Screenshot:
 ##### Special Character Cleanup & Case Standardization
 Cleaned special character issues and standardized lowercase formatting in the email column using LOWER() + SUBSTITUTE() to ensure consistency.
 
+**Formula:**
+```excel
+= LOWER(SUBSTITUTE(C2,"_","."))
+```
+
 Screenshot:
 ![Handling_special_character_and_Case](Cleaning/screenshots/Lower+Substitute.png)
 
