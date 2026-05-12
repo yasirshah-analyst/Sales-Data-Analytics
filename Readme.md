@@ -20,7 +20,7 @@ This project showcases end-to-end Excel data analytics by taking raw sales data 
 - Charts, slicers, & interactive dashboard features
 
 ---
-
+```text
 START ─────────────────────────────────────────────
 
 HR Data Cleaning & Analytics Project/
