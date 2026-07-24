@@ -265,7 +265,7 @@ Built PivotTables and matching Pivot Charts to answer two core questions:
  
 | Question | Result |
 |---|---|
-| Revenue by Category — which categories drive the most revenue? | _Electronics_ |
+| Revenue by Category — which categories drive the most revenue? | _Electronics and Home & Garden drive 68.48% revenue of Total Revenue_ |
 | Monthly Revenue Trends — how does revenue change over time? | _fill in peak/low months_ |
  
 **View Screenshot:**
