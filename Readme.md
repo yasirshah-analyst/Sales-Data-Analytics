@@ -6,6 +6,14 @@ This project showcases end-to-end Excel data analytics by taking raw sales data 
 
 ---
 
+## 🎯 Business Problem
+ 
+*(Simulated scenario — the dataset is synthetic, generated for portfolio purposes, but the project is framed the way a real stakeholder request would be.)*
+ 
+A business wants to understand its sales performance — which product categories drive the most revenue, how revenue trends over time, and whether growth is broad-based or concentrated in a few areas. Before any of that can be answered, the raw sales data needs to be cleaned and organized.
+
+---
+
 ## Project Objectives
 - Organize and clean raw sales data to ensure accuracy and consistency.  
 - Enhance the dataset with additional columns for better analysis.
@@ -20,6 +28,34 @@ This project showcases end-to-end Excel data analytics by taking raw sales data 
 - Charts, slicers, & interactive dashboard features
 
 ---
+
+## 🧭 Workflow
+ 
+```
+Raw Data (messy, single column)
+        │
+        ▼
+ Clean & Format
+ (Text to Columns, dates, casing, email fixes, duplicates)
+        │
+        ▼
+ Enhance
+ (Month_Year, Month_Start columns added)
+        │
+        ▼
+ Analyze
+ (PivotTables — revenue by category, revenue by month)
+        │
+        ▼
+ Visualize
+ (Pivot Charts + Dashboard with KPIs and slicers)
+        │
+        ▼
+ Insights → Recommendations → Business Impact
+```
+ 
+---
+
 ```text
 START ─────────────────────────────────────────────
 
@@ -69,8 +105,9 @@ END ─────────────────────────�
 
 
 ## Dataset Information
-- **Source:** The data set used in this project was generated using AI for portfolio purpose. All data is synthetic and does not represent real individuals. The raw data set has 95 rows including header row and duplicates row.
-- **Type:** Excel Data Analytics / Dashboard Project 
+- **Source:** The dataset used in this project was generated using AI for portfolio purposes. All data is synthetic and does not represent real individuals.
+- **Raw dataset:** 95 rows (including header), with duplicates present
+- **Type:** Excel Data Analytics / Dashboard Project
 
 ---
 
@@ -92,9 +129,9 @@ The raw dataset contained several inconsistencies including:
 
 ---
 
-**Raw Data from row 1 to 25**
-Screenshot:
-![1_to_25_Raw](Data/Raw/screenshot/messy_raw_data.png)
+**View Screenshot:**
+ 
+[Raw Data (rows 1–25)](Data/Raw/screenshot/messy_raw_data.png)
 
 ---
 
@@ -104,31 +141,38 @@ The following cleaning steps are performed to clean the above raw data set to en
 #### Text to Columns 
 Split data into columns using delimiter comma and the data type of Sales_Date converted to MDY format by TEXT TO COLUMNS
 
-Screenshot:
-![Text to Columns](Cleaning/screenshots/text_to_Column.png)
-
-**Organized Raw Data**
-Screenshot:
-![Organized_Raw_Data](Cleaning/screenshots/organized_raw_data.png)
+**View Screenshot:**
+ 
+- [Text to Columns](Cleaning/screenshots/text_to_Column.png)
+- [Organized Raw Data](Cleaning/screenshots/organized_raw_data.png)
 
 ---
 
 #### Adjusting Column Width for Better Readability
 Adjusted column widths to ensure all data is clearly visible and properly aligned for improved readability.
 
-Screenshot:
-![Columns_width](Cleaning/screenshots/Column_widthh_issue.png)
+**View Screenshot:**
+ 
+[Column Width Fix](Cleaning/screenshots/Column_widthh_issue.png)
+
+---
+
+#### Duplicate Removal
+Removed a single duplicate row using Excel’s “Remove Duplicates” feature from the ribbon to ensure unique records in the dataset.
+
+**View Screenshot:**
+ 
+[Duplicate Removal](Cleaning/screenshots/duplicate.png)
 
 ---
 
 #### Sales_Date Cleaning and Formatting 
 Standardized date format by correcting wrong format DMY of some dates as the Sales_Date Column was already Converted to MDY format by TEXT TO COLUMNS
 
-Screenshot:
-![Date_Cleaning_1](Cleaning/screenshots/invalid_Date_1.png)
-
-Screenshot:
-![Date_Cleaning_2](Cleaning/screenshots/invalid_date_2.png)
+**View Screenshot:**
+ 
+- [Date Cleaning — before](Cleaning/screenshots/invalid_Date_1.png)
+- [Date Cleaning — after](Cleaning/screenshots/invalid_date_2.png)
 
 ---
 
@@ -140,8 +184,9 @@ Fixed casing in Product_Category Column using
 = PROPER(B2)
 ```
 
-Screenshot:
-![Fixed_Casing](Cleaning/screenshots/proper.png)
+**View Screenshot:**
+
+[Fixed_Casing](Cleaning/screenshots/proper.png)
 
 ---
 
@@ -154,8 +199,9 @@ Cleaned the email column by correcting domain formatting issues
 = IF(OR(C2="",C2="NULL",ISBLANK(C2)),C2,IF(RIGHT(C2,4)=".com",C2,C2&".com"))
 ```
 
-Screenshot:
-![Handling_Domain_Errors](Cleaning/screenshots/missing.com.png)
+**View Screenshot:**
+
+[Handling_Domain_Errors](Cleaning/screenshots/missing.com.png)
 
 ---
 
@@ -167,36 +213,37 @@ Cleaned special character issues and standardized lowercase formatting in the em
 = LOWER(SUBSTITUTE(C2,"_","."))
 ```
 
-Screenshot:
-![Handling_special_character_and_Case](Cleaning/screenshots/Lower+Substitute.png)
+**View Screenshot:**
+
+[Handling_special_character_and_Case](Cleaning/screenshots/Lower+Substitute.png)
 
 ##### Removing Extra Spaces  
 The Email column contained extra leading space in an email which is cleared using TRIM()
 
-Screenshot:
-![Removing-Extra-Spaces ](Cleaning/screenshots/trim.png)
+**View Screenshot:**
+
+[Removing-Extra-Spaces ](Cleaning/screenshots/trim.png)
 
 ---
 
 ##### null Value Handling
 Replaced null values with “No Email Provided” using IF()
 
-Screenshot:
-![Replacing_null](Cleaning/screenshots/null_email.png)
+**View Screenshot:**
+
+[Replacing_null](Cleaning/screenshots/null_email.png)
 
 ---
 
-#### Duplicate Removal
-Removed a single duplicate row using Excel’s “Remove Duplicates” feature from the ribbon to ensure unique records in the dataset.
 
-Screenshot:
-![Duplicate_Removal](Cleaning/screenshots/duplicate.png)
 
 ---
 
-**Clean Data from row 1 to 25**
-Screenshot:
-![clean_1_25](Data/Clean/screenshot/final_clean.png)
+**Clean Data (rows 1–25):**
+ 
+**View Screenshot:**
+ 
+[Cleaned Data](Data/Clean/screenshot/final_clean.png)
 
 ---
 
@@ -205,15 +252,25 @@ Screenshot:
 ### Dataset Enhancement by adding Month-Year and Month-Start Columns
 Enhanced the dataset by creating two additional columns: Month_Year and Month_Start to support time-based analysis and improve trend tracking.
 
-**Month_Year_Column**
-Screenshot:
-![Month_year](Analysis/screenshot/additional_column_1.png)
-
-**Month_Start_Column**
-Screenshot:
-![Month_Start](Analysis/screenshot/additional_col_2.png)
+**View Screenshot:**
+ 
+- [Month_Year Column](Analysis/screenshot/additional_column_1.png)
+- [Month_Start](Analysis/screenshot/additional_col_2.png)
 
 ---
+
+## Step 4–5: Analyzing and Visualizing with PivotTables & Pivot Charts
+ 
+Built PivotTables and matching Pivot Charts to answer two core questions:
+ 
+| Question | Result |
+|---|---|
+| Revenue by Category — which categories drive the most revenue? | _fill in exact % breakdown_ |
+| Monthly Revenue Trends — how does revenue change over time? | _fill in peak/low months_ |
+ 
+**View Screenshot:**
+ 
+[Pivot Analysis](Analysis/screenshot/pivot.png)
 
 ### Step 4: Bringing data into a visualization tool
 ---
