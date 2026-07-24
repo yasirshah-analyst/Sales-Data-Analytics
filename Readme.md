@@ -268,42 +268,49 @@ Built PivotTables and matching Pivot Charts to answer two core questions:
 | Revenue by Category — which categories drive the most revenue? | _Electronics and Home & Garden together drive 68.48% of total revenue_ |
 | Monthly Revenue Trends — how does revenue change over time? | _Revenue peaked in February and was lowest in December_ |
 
-Analysis Screenshot:
-![Analysis](Analysis/screenshot/pivot.png)
+**View Screenshot**
+
+[Analysis](Analysis/screenshot/pivot.png)
 
 ---
 
 #### Insights Generated
-- **1. High Revenue Concentration Risk**
-The Electronics category dominates nearly half of the total revenue, creating a heavy reliance on a single product line or service. This means any market shift affecting that specific category will impact the entire business's financial health.
-- **2. Post-Peak Retention Collapse**
-Revenue peaks in Month 2 but then drops steadily over the next four months. This means the business can attract customers at first, but struggles to keep them coming back regularly.
+1. **High Revenue Concentration Risk** — The Electronics category dominates nearly half of total revenue (_46.79 %_), creating heavy reliance on a single product line. Any market shift affecting that category would impact the entire business's financial health.
+2. **Post-Peak Retention Collapse** — Revenue peaks in Month 2, then drops steadily over the following four months. This suggests the business can attract customers initially but struggles to retain repeat purchases.
 
 ---
 
+## 💡 Recommendations
+ 
+1. **Diversify revenue away from Electronics** — since one category accounts for close to half of total revenue, consider actively growing other categories to reduce single-category dependency risk.
+2. **Investigate the post-Month-2 drop-off** — look into what changes after the peak (pricing, promotions ending, seasonality, inventory) to understand why customers aren't returning.
+
+---
+## 📊 Business Impact
+ 
+If acted on, these recommendations could help the business:
+ 
+- Reduce financial risk tied to over-reliance on a single product category
+- Convert a predictable revenue dip into a retention opportunity rather than an accepted pattern
+- Use the dynamic KPI dashboard to monitor whether diversification and retention efforts are working, in real time
+
 ## Step 6: Dashboard Creation
-An excel dashboard was created to summarize insights visually. The dashboard includes:
+ 
+An Excel dashboard was created to summarize insights visually, including:
+ 
 - KPIs
 - Pivot Charts
 - Slicers
-
----
-
-### Key Performance Indicators (KPIs) 
----
-#### Dynamic KPI – Total Revenue
-A dynamic Total Revenue KPI was created using Excel’s GETPIVOTDATA function, allowing the value to update automatically based on Pivot Table filters and slicers. This ensures that whenever the user interacts with the dashboard (e.g., selects a category or month), the KPI reflects the exact filtered revenue in real-time—making the dashboard fully interactive and insight-driven.
-
----
-
+### Dynamic KPI — Total Revenue
+ 
+A dynamic Total Revenue KPI was built using Excel's `GETPIVOTDATA` function, so the value updates automatically based on PivotTable filters and slicers — whenever the user selects a category or month, the KPI reflects the exact filtered revenue in real time.
+ 
 ### Slicers
-
-Slicers are interactive filters that allow you to quickly filter by categories like Product Category and Month helping you focus on specific insights without altering the underlying data. the following slicers are used
-
-- Month_Start
-
-- Product_Category
-
+ 
+Interactive filters that let you quickly filter by category or month without altering the underlying data:
+ 
+- `Month_Start`
+- `Product_Category`
 ---
 
 Dashboard Screenshot:
