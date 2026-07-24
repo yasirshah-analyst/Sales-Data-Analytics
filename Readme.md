@@ -265,36 +265,8 @@ Built PivotTables and matching Pivot Charts to answer two core questions:
  
 | Question | Result |
 |---|---|
-| Revenue by Category — which categories drive the most revenue? | _Electronics and Home & Garden drive 68.48% revenue of Total Revenue_ |
-| Monthly Revenue Trends — how does revenue change over time? | _fill in peak/low months_ |
- 
-**View Screenshot:**
- 
-[Pivot Analysis](Analysis/screenshot/pivot.png)
-
-### Step 4: Bringing data into a visualization tool
----
-#### Revenue by Category
-Created a pivot table to summarize total revenue by product category, highlighting top-performing categories.
-
----
-
-#### Monthly Revenue Trends
-Built a pivot table to track revenue trends over time, helping identify patterns and seasonal variations.
-
----
-
-### Step 5: Visualizing Data by Pivot Charts
----
-#### Revenue by Category
-Created from pivot table to summarize total revenue by product category, highlighting top-performing categories.
-
----
-
-#### Monthly Revenue Trends
-Built from pivot table to track revenue trends over time, helping identify patterns and seasonal variations.
-
----
+| Revenue by Category — which categories drive the most revenue? | _Electronics and Home & Garden together drive 68.48% of total revenue_ |
+| Monthly Revenue Trends — how does revenue change over time? | _Revenue peaked in February and was lowest in December_ |
 
 Analysis Screenshot:
 ![Analysis](Analysis/screenshot/pivot.png)
