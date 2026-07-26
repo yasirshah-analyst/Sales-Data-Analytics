@@ -57,9 +57,7 @@ Raw Data (messy, single column)
 ---
 
 ```text
-START ─────────────────────────────────────────────
-
-HR Data Cleaning & Analytics Project/
+Sales Data Cleaning & Analysis Project/
 │
 ├── Raw/
 │   └── screenshot/
@@ -97,8 +95,6 @@ HR Data Cleaning & Analytics Project/
 │       └── dashboard.png
 │
 └── README.md
-
-END ─────────────────────────────────────────────
 ```
 
 ---
