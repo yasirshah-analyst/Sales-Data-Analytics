@@ -29,7 +29,9 @@ A business wants to understand its sales performance — which product categorie
 ### 💡 Recommendations
 1. **Diversify revenue away from Electronics** — since one category accounts for close to half of total revenue, consider actively growing other categories to reduce single-category dependency risk.
 2. **Investigate the post-Month-2 drop-off** — look into what changes after the peak (pricing, promotions ending, seasonality, inventory) to understand why customers aren't returning.
- 
+
+---
+
 ## 📊 Dashboard
  
 **Dashboard Screenshot**
@@ -51,6 +53,7 @@ The raw dataset contained several inconsistencies including:
 - Casing inconsistencies in product category
 - Leading spaces and special character issues, missing email domains and null values in Customer_Email Column
 - Revenue column stored in incorrect format
+
 **View Screenshot:**
  
 [Raw Data (rows 1–25)](Data/Raw/screenshot/messy_raw_data.png)
