@@ -1,6 +1,4 @@
 # Sales Data Cleaning, Analysis & Dashboard: Uncovering Revenue Concentration and a Post-Peak Drop-off in Excel
-  
----
  
 ## Executive Summary
  
@@ -20,7 +18,6 @@ A business wants to understand its sales performance — which product categorie
 - Null values in the email column were replaced with "No Email Provided".
 
 ### 📌 Key Insights
- 
 | Question | Result |
 |---|---|
 | Revenue by Category — which categories drive the most revenue? | _Electronics and Home & Garden together drive 68.48% of total revenue_ |
@@ -30,21 +27,19 @@ A business wants to understand its sales performance — which product categorie
 2. **Post-Peak Retention Collapse** — Revenue peaks in Month 2, then drops steadily over the following four months. This suggests the business can attract customers initially but struggles to retain repeat purchases.
 
 ### 💡 Recommendations
- 
 1. **Diversify revenue away from Electronics** — since one category accounts for close to half of total revenue, consider actively growing other categories to reduce single-category dependency risk.
 2. **Investigate the post-Month-2 drop-off** — look into what changes after the peak (pricing, promotions ending, seasonality, inventory) to understand why customers aren't returning.
  
 ## 📊 Dashboard
  
-**Dashboard Screenshot:**
- 
+**Dashboard Screenshot**
+
 ![Dashboard](Dashboard/screenshot/dashboard.png)
  
 ---
  
 ## 🛠️ Methodology
   
- 
 ### Full Data Analytics Pipeline
  
 #### Step 1: Bringing Data
