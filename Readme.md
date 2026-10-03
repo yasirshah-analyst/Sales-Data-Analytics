@@ -74,18 +74,20 @@ Split data into columns using delimiter comma and the data type of Sales_Date co
 ---
  
 ##### Adjusting Column Width for Better Readability
+
 Adjusted column widths to ensure all data is clearly visible and properly aligned for improved readability.
  
-**View Screenshot:**
+**View Screenshot**
  
 [Column Width Fix](Cleaning/screenshots/Column_widthh_issue.png)
  
 ---
  
 ##### Duplicate Removal
+
 Removed a single duplicate row using Excel's "Remove Duplicates" feature from the ribbon to ensure unique records in the dataset.
  
-**View Screenshot:**
+**View Screenshot**
  
 [Duplicate Removal](Cleaning/screenshots/duplicate.png)
  
